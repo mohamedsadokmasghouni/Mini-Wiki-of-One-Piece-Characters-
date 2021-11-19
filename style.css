@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6fced;
+}
+
+h1{
+    margin: 50px;
+    font-size: 2.5rem;
+}
+
+.op{
+    margin-bottom: 20px;
+    background-color: rgb(109, 103, 103);
+    border: 5px solid white;
+    padding: 10px;
+    padding-left: 0;
+    position: relative;
+    width: 600px;
+}
+
+img{
+    display: none;
+    height: 100px;
+    width: 100px;
+    float: left;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+h2,p{
+    padding: 5px;
+    text-align: center;
+}
+
+.op.active h2, .op.active p{
+    color: rgb(51,51,51);
+}
+
+.im{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 17px 0 0;
+}
+
+a{
+    display: none;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+.btn{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.btn .fa-times-circle{
+    display: none;
+    font-size: 1.5rem;
+}
+
+.btn .fa-chevron-circle-down{
+    font-size: 1.5rem;
+}
+
+.op.active .fa-times-circle{
+    display: block;
+}
+
+.op.active .fa-chevron-circle-down{
+    display: none;
+}
+
+.op.active .im{
+    display: flex;
+}
+
+.op.active a{
+    display: block;
+}
+
+.op.active img{
+    display: block;
+}
+
+.op.active{
+    background-color: white;
+    border: 1px solid black;
+}
